@@ -12,3 +12,5 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD5
 RUN add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
 
 RUN apt install -yq r-base build-essential
+
+RUN Rscript -e 'install.packages(c("xml2", "curl", "crul", "tidyverse", "scholar", "WikipediR", "urltools", "stringr", "tokenizers", "rtweet", "here"))'
