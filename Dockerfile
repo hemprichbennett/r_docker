@@ -5,7 +5,7 @@ ENV TZ=Europe/Moscow \
 
 RUN apt update
 RUN apt upgrade -yq
-RUN apt-get -yq install software-properties-common wget dirmngr gnupg apt-transport-https curl libxml2-dev libcurl4-openssl-dev libssl-dev cron
+RUN apt-get -yq install software-properties-common wget dirmngr gnupg apt-transport-https curl libxml2-dev libcurl4-openssl-dev libssl-dev cron git
 
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
 
