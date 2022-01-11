@@ -14,4 +14,4 @@ RUN add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-
 
 RUN apt install -yq r-base build-essential
 
-RUN Rscript -e 'install.packages(c("xml2", "curl", "crul", "tidyverse", "scholar", "WikipediR", "urltools", "stringr", "tokenizers", "rtweet", "here"))'
+RUN Rscript -e 'install.packages(c("xml2", "curl", "crul", "tidyverse", "scholar", "WikipediR", "urltools", "stringr", "tokenizers", "rtweet", "here", "rAltmetric"))'
